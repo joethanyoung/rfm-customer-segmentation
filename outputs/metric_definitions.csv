@@ -1,0 +1,8 @@
+metric,definition,grain,notes
+Revenue,Quantity * UnitPrice,Transaction line,"Calculated after removing cancellations, missing customer IDs, and non-positive values."
+Analysis Date,max(InvoiceDate) + 1 day,Dataset,Used as the reference date for recency calculation.
+Recency,Analysis Date - latest purchase date,Customer,Lower values mean more recent activity.
+Frequency,Count distinct Invoice,Customer,"Counts unique invoices, not order lines."
+Monetary,Sum Revenue,Customer,Total cleaned revenue attributed to each customer.
+R/F/M Scores,"Quintile scores from Recency, Frequency, and Monetary",Customer,Recency is reverse-scored so more recent customers receive higher R scores.
+Segment,Business-readable grouping from R/F/M score combinations,Customer,"Designed for portfolio reporting and interpretability, not as a final CRM production model."

@@ -1,0 +1,6 @@
+step,rows_before,rows_after,rows_removed,note
+raw_rows,1067371,1067371,0,All rows loaded from the Online Retail II workbook.
+remove_missing_required_fields,1067371,824364,243007,"Remove rows missing invoice date, customer id, quantity, or unit price."
+remove_cancellations,824364,805620,18744,Remove cancellation invoices beginning with C.
+remove_non_positive_quantity,805620,805620,0,Remove returns or invalid quantity rows.
+remove_non_positive_unit_price,805620,805549,71,Remove rows without positive unit price.
