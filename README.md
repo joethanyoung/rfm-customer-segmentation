@@ -212,6 +212,10 @@ outputs/rfm_customers.csv  (individual-level RFM scores, used for Tableau dashbo
 - Segment definitions are designed for portfolio demonstration and business interpretability, not as a final CRM production model.
 - The analysis does not prove campaign impact; it identifies customer groups that could support prioritisation, reporting, and follow-up planning.
 
-## Tech Stack
+## Toolkit
 
-`Python` · `pandas` · `matplotlib` · `Tableau` · `openpyxl`
+- **Languages:** Python · SQL
+- **Business Intelligence:** Tableau · Power BI · Excel · dashboarding · KPI reporting
+- **Data Analysis:** pandas · data cleaning · exploratory analysis · customer segmentation
+- **Visualization:** Tableau · Power BI · matplotlib
+- **Workflow:** Jupyter Notebook · Git · GitHub
